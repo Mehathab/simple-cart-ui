@@ -81,10 +81,7 @@ const Products = () => {
                       {`Code: ${code}`}
                     </CardSubtitle>
                     <CardText>{`Price: ${price}`} </CardText>
-                    <Button
-                      color='success'
-                      onClick={addToCartAction(productsState)}
-                    >
+                    <Button color='success' onClick={addToCartAction(product)}>
                       Add to Cart
                     </Button>
                   </CardBody>

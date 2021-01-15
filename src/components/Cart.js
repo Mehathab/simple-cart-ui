@@ -23,12 +23,12 @@ const Cart = ({ list, toggleCart, showModal }) => {
         {`Added Items - ${list?.length}`}
       </ModalHeader>
       <ModalBody>
-        {Object.entries(cartObjData)?.map((item) => {
-          <article>
-            <header>{item.name}</header>
-            <p>{`@${item.quantity} x ${item.price}`}</p>
-          </article>;
-        })}
+        {Object.entries(cartObjData)?.map(([key, itemObj]) => (
+          <article key={key}>
+            <p>{itemObj.name}</p>
+            <p>{`${key} @${itemObj.quantity} x ${itemObj.price}`}</p>
+          </article>
+        ))}
       </ModalBody>
     </Modal>
   );
