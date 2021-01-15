@@ -1,0 +1,15 @@
+.products {
+  .spinnerContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .cardContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card {
+      width: 300px;
+      height: 400px;
+    }
+  }
+}
